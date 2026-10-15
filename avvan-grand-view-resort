@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17352d">
+<title>The Avvan Grand View Resort</title>
+<style>
+:root {
+  --green: #17352d;
+  --gold: #c6a568;
+  --cream: #f8f5ed;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #26352e;
+  background: var(--cream);
+}
+header {
+  background: var(--green);
+  color: white;
+  padding: 22px 18px;
+  text-align: center;
+}
+.brand {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+header h1 {
+  margin: 10px 0 5px;
+  font-family: Georgia, serif;
+  font-size: 27px;
+}
+header p { margin: 5px 0; font-size: 13px; }
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 19px;
+  padding: 13px 8px;
+  background: white;
+}
+nav a {
+  color: var(--green);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+.hero {
+  min-height: 340px;
+  padding: 60px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(#10271b88, #10271b99),
+    linear-gradient(135deg, #496d51, #a4ad87, #253e34);
+}
+.hero h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  margin: 0 0 15px;
+}
+.hero p { line-height: 1.7; }
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 18px;
+  background: var(--gold);
+  color: #182c24;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+section { padding: 30px 18px; }
+h2.section-title {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 27px;
+}
+.intro {
+  text-align: center;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: auto;
+  color: #56635b;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 24px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0000000a;
+}
+.card-art {
+  height: 115px;
+  background: linear-gradient(140deg, #a5b7a0, #486a53);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 35px;
+}
+.card-content { padding: 13px; }
+.card h3 { font-size: 16px; margin: 0 0 8px; }
+.card p { font-size: 12px; color: #66716a; line-height: 1.6; }
+.booking {
+  background: var(--green);
+  color: white;
+}
+.booking h2 { color: var(--gold); }
+form { max-width: 460px; margin: auto; }
+label {
+  display: block;
+  font-size: 13px;
+  margin: 13px 0 6px;
+}
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #d4d9d2;
+  background: white;
+  font-size: 15px;
+}
+form .button { width: 100%; margin-top: 20px; }
+.note { font-size: 12px; line-height: 1.6; }
+.contact { text-align: center; line-height: 1.9; }
+footer {
+  background: #10251f;
+  color: white;
+  text-align: center;
+  padding: 22px 12px;
+  font-size: 12px;
+}
+@media (min-width: 650px) {
+  .hero { min-height: 420px; }
+  .hero h2 { font-size: 52px; }
+  section { padding: 45px 8%; }
+  .cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .card-art { height: 150px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">WELCOME TO</div>
+  <h1>THE AVVAN</h1>
+  <div class="brand">GRAND VIEW RESORT</div>
+  <p>Your stay. Your celebration. Your experience.</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#rooms">Rooms</a>
+  <a href="#facilities">Facilities</a>
+  <a href="#booking">Book Now</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <p>YOUR PERFECT GETAWAY</p>
+  <h2>Relax in Comfort.<br>Celebrate in Style.</h2>
+  <p>Discover The Avvan Grand View Resort, a place to
+  unwind, reconnect and create wonderful memories.</p>
+  <div>
+    <a class="button" href="#booking">PLAN YOUR STAY</a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Experience The Avvan</h2>
+  <p class="intro">
+    Discover comfortable stays, memorable celebrations
+    and warm hospitality. Explore our resort and contact
+    our team to plan your visit.
+  </p>
+</section>
+
+<section id="rooms">
+  <h2 class="section-title">Rooms & Accommodation</h2>
+  <p class="intro">Explore your stay options and ask us about availability.</p>
+  <div class="cards">
+    <article class="card">
+      <div class="card-art">♧</div>
+      <div class="card-content">
+        <h3>Deluxe Room</h3>
+        <p>Comfortable accommodation for your getaway.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-art">✦</div>
+      <div class="card-content">
+        <h3>Premium Room</h3>
+        <p>An elevated stay for a special occasion.</p>
+      </div>
+    </article>
+  </div>
+  <p class="note">Room categories are placeholders. We will update
+  them with your actual room types, photographs and prices.</p>
+</section>
+
+<section id="facilities">
+  <h2 class="section-title">Explore Our Resort</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card-art">♨</div>
+      <div class="card-content">
+        <h3>Dining</h3>
+        <p>Discover food and dining options.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-art">❋</div>
+      <div class="card-content">
+        <h3>Celebrations</h3>
+        <p>Enquire about your special event.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-art">❀</div>
+      <div class="card-content">
+        <h3>Relaxation</h3>
+        <p>Explore available leisure facilities.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-art">☆</div>
+      <div class="card-content">
+        <h3>Guest Services</h3>
+        <p>Contact our team for assistance.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <h2 class="section-title">Plan Your Stay</h2>
+  <p class="intro" style="color:#e4e8e2">
+    Submit your preferred dates to prepare a booking enquiry.
+  </p>
+  <form id="bookingForm">
+    <label for="guest">Guest name</label>
+    <input id="guest" required placeholder="Enter your full name">
+
+    <label for="checkin">Check-in date</label>
+    <input id="checkin" type="date" required>
+
+    <label for="checkout">Check-out date</label>
+    <input id="checkout" type="date" required>
+
+    <label for="guests">Number of guests</label>
+    <select id="guests">
+      <option>1</option>
+      <option selected>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5 or more</option>
+    </select>
+
+    <button class="button" type="submit">PREPARE BOOKING ENQUIRY</button>
+    <p class="note">This prototype prepares an enquiry only.
+    Your dates and room availability are not yet confirmed.</p>
+  </form>
+  <p id="bookingMessage" role="status"></p>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Our Team</h2>
+  <p class="contact">
+    <strong>The Avvan Grand View Resort</strong><br>
+    We look forward to welcoming you.<br>
+    Phone, WhatsApp and resort directions will be added
+    after the contact details are provided.
+  </p>
+</section>
+</main>
+
+<footer>
+  © <span id="year"></span> The Avvan Grand View Resort.
+  All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+const today = new Date();
+const todayString = [
+  today.getFullYear(),
+  String(today.getMonth() + 1).padStart(2, "0"),
+  String(today.getDate()).padStart(2, "0")
+].join("-");
+
+const checkin = document.getElementById("checkin");
+const checkout = document.getElementById("checkout");
+
+checkin.min = todayString;
+checkout.min = todayString;
+
+checkin.addEventListener("change", () => {
+  checkout.min = checkin.value || todayString;
+  if (checkout.value && checkout.value <= checkin.value) {
+    checkout.value = "";
+  }
+});
+
+document.getElementById("bookingForm").addEventListener("submit", e => {
+  e.preventDefault();
+
+  if (checkout.value <= checkin.value) {
+    document.getElementById("bookingMessage").textContent =
+      "Please select a check-out date after check-in.";
+    return;
+  }
+
+  const message =
+    "Booking enquiry - The Avvan Grand View Resort\n" +
+    "Guest: " + document.getElementById("guest").value + "\n" +
+    "Check-in: " + checkin.value + "\n" +
+    "Check-out: " + checkout.value + "\n" +
+    "Guests: " + document.getElementById("guests").value;
+
+  document.getElementById("bookingMessage").textContent =
+    message + "\n\nEnquiry prepared. WhatsApp booking will be enabled after setup.";
+});
+</script>
+</body>
+</html>
