@@ -64,4 +64,16 @@ document.getElementById("bookingForm").addEventListener("submit", e => {
   window.open(whatsappURL, "_blank");
 });
 </script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./service-worker.js")
+      .then(() => console.log("Avvan Resort app ready"))
+      .catch(error =>
+        console.error("Service worker registration failed:", error)
+      );
+  });
+}
+</script>
 
